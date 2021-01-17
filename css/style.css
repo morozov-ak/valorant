@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px; }
+
+header {
+  height: 66px;
+  background-color: #1F2326; }
+
+.container {
+  width: 1330px; }
+
+.background {
+  background-color: #1F2326; }
+
+.header_row {
+  display: flex;
+  align-items: center;
+  margin: 23px 36px; }
+
+.logo {
+  display: flex;
+  align-items: center; }
+
+.logo__riotGames {
+  width: 39px;
+  height: 20px;
+  background-size: cover;
+  background-image: url(../media/riot_logo.svg); }
+
+.logo__valorant {
+  width: 24px;
+  height: 20px;
+  background-size: cover;
+  background-image: url(../media/valorant_logo.svg); }
+
+.logo__separator {
+  margin: 0 30px;
+  width: 2px;
+  height: 21px;
+  background-color: white; }
+
+.menu__left {
+  margin: 0;
+  display: flex;
+  list-style-type: none; }
+
+.menu__left-item {
+  margin-right: 35px;
+  color: white; }
+
+.item-dropdown::after {
+  content: '';
+  position: fixed;
+  margin-left: 8px;
+  height: 20px;
+  width: 10px;
+  background-image: url(../media/dropdown.svg);
+  background-position-x: center;
+  background-position-y: 5px;
+  background-repeat: no-repeat; }
+
+.box {
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black; }
+
+.boxes {
+  display: flex;
+  border: 2px solid black; }
+
+.hero_perks {
+  border: 2px solid black; }
+
+.perks {
+  display: none;
+  margin: 50px;
+  width: 500px;
+  height: 100px;
+  border: 2px solid black; }
+
+.passive {
+  background-color: #333333; }
+
+.active {
+  display: block;
+  background-color: red; }
