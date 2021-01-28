@@ -211,10 +211,14 @@ header{
     background-color: white;
 }
 
+.perks-list__item-frame{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
 .perks-list__item{
     margin: 10px;
     width: 30px;
-    //rgb(44, 34, 34)
     height: 30px;
     fill: white;
     
@@ -384,6 +388,10 @@ header{
     position: absolute;
     bottom: 1px;
     right: 50px;
+}
+.perks-carousel__icon-frame{
+    width: 95px;
+    height: 95px;
 }
 .perks-carousel__icon{
     width: 95px;
