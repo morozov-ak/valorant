@@ -1,5 +1,7 @@
-var prevHero = "hero1"
-var currentHero = "hero1"
+let prevHero = "hero1"
+let currentHero = "hero1"
+let spinnerDeltaY= 0 
+window.onload(console.log("loaded?"))
 
 function previous_hero(){
     var id=Number(currentHero.substring(4))
@@ -15,6 +17,19 @@ function next_hero(){
     console.log("next_id",next_id)
     check("hero"+next_id)
 }
+
+function my(event){
+    event.preventDefault()
+    let spinIt = document.getElementById("spinBaby")
+    let maxScroll= spinIt.scrollWidth - spinIt.clientWidth
+    if((0<spinnerDeltaY+event.deltaY*5) && (spinnerDeltaY+event.deltaY*5<maxScroll)){
+        spinnerDeltaY+=event.deltaY*5
+        spinIt.scroll(spinnerDeltaY,0)
+    }
+    
+}
+
+
 
 function check(id){
     currentHero=id

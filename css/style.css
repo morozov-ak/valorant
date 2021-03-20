@@ -97,6 +97,7 @@ header {
   border-radius: 0px 0px 20px 20px; }
 
 .hero-carousel {
+  height: 510px;
   display: flex;
   padding: 55px 0 10px;
   overflow-x: scroll;
